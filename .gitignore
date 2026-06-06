@@ -1,0 +1,20 @@
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Các file tạm
+*.log
+*.tmp
+
+# Thư mục node_modules (nếu sau này dùng npm)
+node_modules/
+
+# Các file nén hoặc build
+dist/
+build/
+*.zip
+*.pem
+
+# IDE
+.vscode/
+.idea/
