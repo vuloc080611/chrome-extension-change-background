@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "My First Chrome Extension",
+  "version": "1.0",
+  "description": "Extension mẫu: đổi màu nền trang web.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
