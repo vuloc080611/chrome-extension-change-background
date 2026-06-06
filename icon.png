@@ -1,0 +1,21 @@
+// Chạy trong console của bất kỳ trang web nào để tạo icon 128x128 màu xanh dương
+const canvas = document.createElement('canvas');
+canvas.width = 128;
+canvas.height = 128;
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = '#4f46e5';
+ctx.beginPath();
+ctx.arc(64, 64, 60, 0, 2 * Math.PI);
+ctx.fill();
+ctx.fillStyle = 'white';
+ctx.font = 'bold 48px Arial';
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.fillText('EX', 64, 64);
+canvas.toBlob(blob => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'icon.png';
+  a.click();
+});
